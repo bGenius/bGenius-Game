@@ -1,0 +1,13 @@
+/*
+ Required styling for bgGames engine components
+ */
+
+bg-scene {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 3px solid #fff;
+}
+bg-entity {
+    position: absolute;
+}

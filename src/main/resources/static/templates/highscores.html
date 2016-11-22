@@ -1,0 +1,27 @@
+<div class="panel highscore-container">
+    <h2>Highscores</h2>
+    <table class="table">
+        <tr>
+            <th>Player name</th>
+            <th>Score</th>
+            <th>Time</th>
+        </tr>
+
+        <!--
+        Seventh assignment:
+
+        Make the view show a table row for each highscore
+        Hint: ng-repeat, using what's been made available in the scope
+        -->
+        <tr>
+            <!--
+            Eighth assignment (when all rows are shown, and dates seem correct):
+            Add the playerName and score fields.
+            Hint: angular renders mustache-style templates like {{player.name}}
+             -->
+            <td>Unknown</td>
+            <td>0</td>
+            <td><span am-time-ago="highscore.dateCreated"></span></td>
+        </tr>
+    </table>
+</div>

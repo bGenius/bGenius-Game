@@ -1,0 +1,11 @@
+<div class="arkanoid-container" ng-click="start()">
+    <h1 ng-if="!started" class="start">MOUSECLICK TO START</h1>
+
+    <bg-scene size="field.size" ng-mousemove="updateMouse($event)">
+        <bg-entity name="{{name}}" size="brick.size" position="brick.position" texture="brick.texture" ng-repeat="(name,brick) in bricks" ng-if="brick.alive"></bg-entity>
+        <bg-entity name="ball" size="ball.size" position="ball.position" texture="ball.texture" movement="ball.movement" collision="checkCollision($event, $actions)"></bg-entity>
+        <bg-entity name="paddle" size="paddle.size" position="paddle.position" texture="paddle.texture" movement="paddle.movement"></bg-entity>
+    </bg-scene>
+
+    <bg-scoreboard score="score" />
+</div>

@@ -1,0 +1,9 @@
+Sixth assignment:
+
+Create a HighscoreRepository interface, which should be a JpaRepository<Highscore,Integer>
+Make sure it's detected and created by spring as a @Repository.
+For simplicity we're going to expose the data to the world by annotating the interface with @RestResource
+
+If you have done this correctly (and restarted your server),
+the repository should be accessible as a REST endpoint, which can be tested in the (included in the project) browser:
+http://localhost:8080/api/browser/index.html#http://localhost:8080/api/highscores

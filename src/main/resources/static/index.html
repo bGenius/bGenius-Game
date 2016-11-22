@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>bGenius Game</title>
+
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="lib/engine.css" rel="stylesheet">
+    <link href="style/arkanoid.css" rel="stylesheet">
+    <link href="style/header.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/>
+</head>
+
+<body ng-app="arkanoid" ng-strict-di
+    class="fixed-header" ng-class="{'animated': !animationDisabled}">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="spaceship"></div>
+    <div id="alien"></div>
+
+    <div ui-view>
+
+    </div>
+
+    <!-- TODO: Automate and minify before going to production -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/ui-bootstrap-tpls-2.2.0.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/lodash.min.js"></script>
+    <script src="lib/restangular.min.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/angular-moment.min.js"></script>
+    <script src="lib/engine.min.js"></script>
+
+    <script src="script/module.js"></script>
+    <script src="script/config.js"></script>
+    <script src="script/gameController.js"></script>
+    <script src="script/highscoresController.js"></script>
+    <script src="script/enterHighscoreController.js"></script>
+    <script src="script/enterHighscoreService.js"></script>
+    <script src="script/scoreboardController.js"></script>
+    <script src="script/scoreboardDirective.js"></script>
+    <script src="script/route.js"></script>
+
+</body>
+</html>

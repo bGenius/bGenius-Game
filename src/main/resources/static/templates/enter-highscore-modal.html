@@ -1,0 +1,22 @@
+<form class="form-horizontal" ng-submit="save();">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Game over</h3>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div class="container-fluid">
+            <p>Congratulations! Your highscore is: <span class="score">{{score}}</span></p>
+
+            <div class="form-group">
+                <label for="player_name" class="col-xs-3 control-label">Player name:</label>
+                <div class="col-xs-9">
+                    <input id="player_name" type="text" ng-model="name" class="form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="submit">Save!</button>
+        <button class="btn btn-danger" type="button" ng-click="cancel();">I'm ashamed</button>
+    </div>
+</form>
